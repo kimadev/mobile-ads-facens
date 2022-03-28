@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:onClick="btnSalvarClick"
+        android:text="Calcular"
+        app:layout_constraintEnd_toEndOf="@+id/editTextValor"
+        app:layout_constraintTop_toBottomOf="@+id/editTextValor" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Calcular Apólice"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNomeApolice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumeroApolice" />
+
+    <Spinner
+        android:id="@+id/spinnerSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextNumeroApolice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumeroApolice"
+        app:layout_constraintTop_toTopOf="@+id/editTextNumeroApolice" />
+
+    <EditText
+        android:id="@+id/editTextValor"
+        android:layout_width="202dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:hint="Valor"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextIdade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextIdade" />
+
+    <EditText
+        android:id="@+id/editTextNumeroApolice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Número"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextIdade"
+        android:layout_width="95dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Idade"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/editTextNumeroApolice"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNomeApolice" />
+
+    <TextView
+        android:id="@+id/textViewResultado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="280dp"
+        android:text="Resultado"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomeApolice"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+
+    <TextView
+        android:id="@+id/textViewResultadoCalculo"
+        android:layout_width="366dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

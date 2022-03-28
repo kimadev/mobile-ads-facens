@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tituloPergunta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/quiz_pergunta_2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Área: História"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tituloPergunta2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPergunta">
+
+        <RadioButton
+            android:id="@+id/radioBtnQ2R1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="China" />
+
+        <RadioButton
+            android:id="@+id/radioBtnQ2R2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atlântida" />
+
+        <RadioButton
+            android:id="@+id/radioBtnQ2R3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Egito" />
+
+        <RadioButton
+            android:id="@+id/radioBtnQ2R4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mongólia" />
+
+        <RadioButton
+            android:id="@+id/radioBtnQ2R5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Japão" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="Em que lugar o Papel foi inventado há mais de 2000 anos atrás?"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tituloPergunta2"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPergunta2" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

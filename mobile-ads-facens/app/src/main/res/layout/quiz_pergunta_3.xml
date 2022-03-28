@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tituloPergunta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/quiz_pergunta_3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Área: Artes"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tituloPergunta3" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPergunta">
+
+        <RadioButton
+            android:id="@+id/radioBtnQ3R1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paul Cézanne" />
+
+        <RadioButton
+            android:id="@+id/radioBtnQ3R2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pablo Picasso" />
+
+        <RadioButton
+            android:id="@+id/radioBtnQ3R3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diego Rivera" />
+
+        <RadioButton
+            android:id="@+id/radioBtnQ3R4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tarsila do Amaral" />
+
+        <RadioButton
+            android:id="@+id/radioBtnQ3R5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvador Dalí" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPergunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Quem pintou &quot;Guernica&quot;?"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/tituloPergunta3"
+        app:layout_constraintTop_toBottomOf="@+id/tituloPergunta3" />
+
+    <Button
+        android:id="@+id/btnConferir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Conferir acertos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

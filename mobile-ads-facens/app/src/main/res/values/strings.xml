@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">mobile</string>
+    <string name="chk_box_representante">Representante</string>
+    <string name="quiz_titulo">Quiz</string>
+    <string name="quiz_pergunta_1">Pergunta 1</string>
+    <string name="quiz_resposta_1">6</string>
+    <string name="quiz_resposta_2">Egito</string>
+    <string name="quiz_resposta_3">Pablo Picasso</string>
+    <string name="quiz_pergunta_2">Pergunta 2</string>
+    <string name="quiz_pergunta_3">Pergunta 3</string>
+    <string name="ra">RA</string>
+    <string name="nome">Nome</string>
+</resources>

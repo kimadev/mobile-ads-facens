@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cursos_array">
+        <item>Análise e Desenvolvimento de Sistemas</item>
+        <item>Ciência da computação</item>
+        <item>Engenharia da computação</item>
+        <item>Engenharia de software</item>
+    </string-array>
+</resources>
