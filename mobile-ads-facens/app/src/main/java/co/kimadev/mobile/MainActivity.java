@@ -22,6 +22,8 @@ import co.kimadev.mobile.enums.SexoEnum;
 import co.kimadev.mobile.models.Aluno;
 import co.kimadev.mobile.models.AlunoBuilder;
 import co.kimadev.mobile.views.ApoliceActivity;
+import co.kimadev.mobile.views.Aula3Activity;
+import co.kimadev.mobile.views.CursoActivity;
 import co.kimadev.mobile.views.QuizActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -81,8 +83,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void btnCursoViewIntent(View view) {
+        Intent intent = new Intent(this, CursoActivity.class);
+        startActivity(intent);
+    }
+
     public void btnQuizIntent(View view) {
         Intent intent = new Intent(this, QuizActivity.class);
+        startActivity(intent);
+    }
+
+    public void btnAula3Intent(View view) {
+        Intent intent = new Intent(this, Aula3Activity.class);
         startActivity(intent);
     }
 }

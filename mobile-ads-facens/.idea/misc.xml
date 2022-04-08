@@ -3,8 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../../../layout/custom_preview.xml" value="0.29259259259259257" />
         <entry key="app/src/main/res/layout/activity_apolice.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/aula_3_activity.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/card_item_curso.xml" value="0.42592592592592593" />
+        <entry key="app/src/main/res/layout/card_item_periodo.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/card_item_pessoa.xml" value="0.35052083333333334" />
+        <entry key="app/src/main/res/layout/lista_cursos.xml" value="0.35052083333333334" />
         <entry key="app/src/main/res/layout/quiz/quiz_pergunta_1.xml" value="0.33" />
         <entry key="app/src/main/res/layout/quiz_activity.xml" value="0.5" />
         <entry key="app/src/main/res/layout/quiz_pergunta_1.xml" value="0.33" />

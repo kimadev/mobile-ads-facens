@@ -20,6 +20,8 @@
         </activity>
         <activity android:name="co.kimadev.mobile.views.ApoliceActivity" />
         <activity android:name="co.kimadev.mobile.views.QuizActivity" />
+        <activity android:name="co.kimadev.mobile.views.Aula3Activity" />
+        <activity android:name="co.kimadev.mobile.views.CursoActivity" />
     </application>
 
 </manifest>

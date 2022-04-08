@@ -122,11 +122,33 @@
         android:id="@+id/btnQuiz"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
         android:onClick="btnQuizIntent"
         android:text="Quiz"
         app:layout_constraintBottom_toBottomOf="@+id/btnApolice"
         app:layout_constraintEnd_toStartOf="@+id/btnApolice"
+        app:layout_constraintStart_toEndOf="@+id/btnAula3"
         app:layout_constraintTop_toTopOf="@+id/btnApolice" />
+
+    <Button
+        android:id="@+id/btnAula3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:onClick="btnAula3Intent"
+        android:text="Aula3"
+        app:layout_constraintBottom_toBottomOf="@+id/btnQuiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnQuiz" />
+
+    <Button
+        android:id="@+id/btnCursoView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:onClick="btnCursoViewIntent"
+        android:text="Cursos"
+        app:layout_constraintBottom_toTopOf="@+id/btnQuiz"
+        app:layout_constraintEnd_toEndOf="@+id/btnQuiz"
+        app:layout_constraintStart_toStartOf="@+id/btnQuiz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
